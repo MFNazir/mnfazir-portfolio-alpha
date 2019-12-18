@@ -20,7 +20,7 @@ default: &default
   database: DevCampPortfolio_development
   pool: 5
   username: postgres
-  password: arsenal98
+  password: Arsenal98@
 
 development:
   <<: *default
@@ -84,4 +84,4 @@ production:
   <<: *default
   database: DevCampPortfolio_production
   username: postgres
-  password: arsenal98
+  password: Arsenal98@
