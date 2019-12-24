@@ -20,7 +20,7 @@ class PortfoliosController < ApplicationController
     end
 
     def create
-        @portfolio = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
+        @portfolio = Portfolio.new(portfolio_params)
     
         respond_to do |format|
           if @portfolio.save
@@ -41,7 +41,7 @@ class PortfoliosController < ApplicationController
         @portfolio = Portfolio.find(params[:id])
 
         respond_to do |format|
-          if @portfolio.update(params.require(:portfolio).permit(:title, :subtitle, :body))
+          if @portfolio.update(portfolio_params)
             format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully updated.' }
             format.json { render :show, status: :ok, location: @portfolio }
           else
@@ -61,5 +61,13 @@ class PortfoliosController < ApplicationController
           format.json { head :no_content }
         end
       end
+      private
+    # Use callbacks to share common setup or constraints between actions.
+    def portfolio_params
+      params.require(:portfolio).permit(:title,:subtitle,:body,technologies_attributes: [:name])
+    end
 
+    
 end
+
+
