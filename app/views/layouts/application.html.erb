@@ -8,22 +8,23 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  
   <meta name="keywords" content="<%= @seo_keywords %>">
+  
   <body>
-  <p class="notice"><%= notice %></p>
+       
+       <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
 
    <%= render "shared/nav", location: 'top' %>
 
-  <% if current_user.is_a?(User) %>
-  <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-   <% else %>
-    <%= link_to "Register", new_user_registration_path %>
-    <%= link_to "Login", new_user_session_path %>
-    <% end %>
+   <%= login_helper %>
+   
     <%= yield %>
+    
     <% if session[:source] %>
     <p>Thanks for Visting From <%= session[:source] %></p>
     <% end %>
+  
   </body>
 </html>
