@@ -18,4 +18,14 @@ module ApplicationHelper
             content_tag(:p, greeting, class: "source-greeting")
          end 
     end 
+
+    class Renderer 
+        def self.copyright name, msg 
+            "&copy; #{Time.now.year} | <b>#{name}</b> #{msg}".html_safe
+        end
+    end
+
+    def set_copyright
+        @copyright = ApplicationHelper::Renderer.copyright 'Muhammad Nazir', 'All Rights Reserved'
+    end
 end
