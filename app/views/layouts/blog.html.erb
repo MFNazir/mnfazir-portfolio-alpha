@@ -15,11 +15,13 @@
        <p class="alert"><%= alert %></p>
 
     <%= yield %>
-   <%= render "shared/nav", location: 'bottom' %>
+    
+    <%= render "shared/nav", location: 'bottom' %>
+    
     <%= login_helper %>
-
-
-        <%= source_helper("blog") %>
+    
+    <%= source_helper("blog") %>
+    
 
   </body>
 </html>
