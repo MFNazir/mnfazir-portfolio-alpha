@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title><%=  @page_title %></title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <meta name="keywords" content="<%= @seo_keywords %>">
+
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  
-  <meta name="keywords" content="<%= @seo_keywords %>">
-  
+    
   <body>
        
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
-   <%= render "shared/nav", location: 'top' %>
+    <%= render "shared/nav", location: 'top' %>
 
-   <%= login_helper %>
+    <%= login_helper %>
    
     <%= yield %>
     

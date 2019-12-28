@@ -5,9 +5,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'blogs', 'data-turbolinks-track': 'reload' %>
   </head>
   <meta name="keywords" content="<%= @seo_keywords %>">
   <body>
@@ -21,6 +20,7 @@
     <%= login_helper %>
     
     <%= source_helper("blog") %>
+    
     
 
   </body>
