@@ -28,4 +28,6 @@ module ApplicationHelper
     def set_copyright
         @copyright = ApplicationHelper::Renderer.copyright 'Muhammad Nazir', 'All Rights Reserved'
     end
+
+    
 end
