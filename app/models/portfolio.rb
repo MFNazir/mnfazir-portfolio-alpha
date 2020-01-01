@@ -19,4 +19,8 @@ class Portfolio < ApplicationRecord
     self.thumb_image ||= "https://via.placeholder.com/350x200" 
     
     end
+
+    def self.by_position 
+        order("position ASC")
+    end 
 end

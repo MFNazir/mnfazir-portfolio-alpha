@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
@@ -62,3 +62,4 @@ gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem "font-awesome-rails"
 gem 'font_awesome5_rails', '~> 1.0'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'jquery-ui-rails'
