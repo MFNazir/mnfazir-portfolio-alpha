@@ -30,12 +30,16 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: gray;
+  
 }
 body {
-  color: #fff;
+  color:black;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");  
+  background-repeat: no-repeat;
+  background-size: 100%;
+
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -184,3 +188,9 @@ body {
   margin: 0 auto;
   float: none; 
  }
+
+
+.app-footer {
+  color: white;
+  text-align: right;
+}
