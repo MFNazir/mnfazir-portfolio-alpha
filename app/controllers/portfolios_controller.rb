@@ -68,7 +68,7 @@ access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, 
       private
     # Use callbacks to share common setup or constraints between actions.
     def portfolio_params
-      params.require(:portfolio).permit(:title,:subtitle,:body,technologies_attributes: [:name])
+      params.require(:portfolio).permit(:title,:subtitle,:body, :main_image, :thumb_image, technologies_attributes: [:name])
     end
 
     
