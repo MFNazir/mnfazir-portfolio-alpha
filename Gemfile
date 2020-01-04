@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
-
+#Testing Pull
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
 # Use postgresql as the database for Active Record
@@ -63,3 +63,7 @@ gem "font-awesome-rails"
 gem 'font_awesome5_rails', '~> 1.0'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'jquery-ui-rails'
+gem 'carrierwave', '~> 2.0', '>= 2.0.2'
+gem 'mini_magick', '~> 4.9', '>= 4.9.5'
+gem 'carrierwave-aws', '~> 1.4'
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
