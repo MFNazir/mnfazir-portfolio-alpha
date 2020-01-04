@@ -7,7 +7,9 @@ require("packs/sorts.coffee")
 require("packs/html.sortable")   
 import "bootstrap";
 import "@fortawesome/fontawesome-free/js/all";
-import "../stylesheets/portfolios"
+import "../stylesheets/portfolios";
+import "cocoon";
+
 
 
 
