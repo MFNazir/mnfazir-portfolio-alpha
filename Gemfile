@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '2.6.5'
 #Testing Pull
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
@@ -68,3 +68,4 @@ gem 'mini_magick', '~> 4.9', '>= 4.9.5'
 gem 'carrierwave-aws', '~> 1.4'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
 gem "cocoon"
+gem 'gritter', '~> 1.2'

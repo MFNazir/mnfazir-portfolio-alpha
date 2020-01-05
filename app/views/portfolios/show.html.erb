@@ -22,7 +22,8 @@
       <% end %>
       <% if logged_in?(:site_admin) %>
         <div class="">
-          <%= link_to "Edit Item", edit_portfolio_path(@portfolio), class: 'btn btn-warning' %>
+          <%= link_to "Edit Item", edit_portfolio_path(@portfolio), class: 'btn btn-secondary' %>
+          <%= link_to "Delete Item", @portfolio, method: :delete, data: {confirm: 'Are You Sure?'}, class: 'btn btn-danger' %>
         </div>
       <% end %>
     </div>
