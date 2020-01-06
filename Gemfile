@@ -69,3 +69,4 @@ gem 'carrierwave-aws', '~> 1.4'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
 gem "cocoon"
 gem 'gritter', '~> 1.2'
+gem "aws-sdk-s3", require: false
